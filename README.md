@@ -7,24 +7,31 @@ Repositório com os códigos desenvolvidos em sala de aula e materiais de apoio 
 ## 📁 Estrutura do Repositório
 
 ```
-📦 aprendizagem-de-maquina
-├── 📂 Codigo/
-│   ├── regressao_linear_simples/
-│   ├── regressao_linear_multipla/
-│   └── ...
-└── 📂 Slide-Prof-Tiago/
+📦 aprendizado-de-maquina
+├── 📂 Codigos/
+│   ├── Regressao-linear-simples/
+│   ├── Regressao-linear-multipla/
+│   ├── Regressao-logistica/
+│   ├── Perceptron/
+│   ├── Knn/
+│   └── MLP/
+└── 📂 Slides-Prof-Tiago/
     └── (slides disponibilizados pelo professor)
 ```
 
-### `📂 Codigo/`
+### `📂 Codigos/`
 Contém as implementações dos modelos de Aprendizagem de Máquina desenvolvidos durante as aulas, incluindo:
 
 | Modelo | Descrição |
 |--------|-----------|
-| **Regressão Linear Simples** | Previsão de valores com uma única variável preditora |
-| **Regressão Linear Múltipla** | Previsão de valores com múltiplas variáveis preditoras |
+| **Regressão Linear Simples** | Previsão de valores contínuos com uma única variável preditora, calculando os coeficientes `a` e `b` via fórmulas analíticas |
+| **Regressão Linear Múltipla** | Previsão de preços de imóveis (`kc_house_data.csv`) com múltiplas variáveis preditoras usando a Equação Normal com NumPy e Pandas |
+| **Regressão Logística** | Classificação de sobrevivência no Titanic com função Sigmoid, Gradient Descent e Matriz de Confusão (VP, VN, FP, FN) |
+| **Perceptron** | Implementação do neurônio artificial clássico para classificação binária |
+| **KNN** | Algoritmo de classificação por vizinhos mais próximos (K-Nearest Neighbors) |
+| **MLP** | Rede Neural Multicamadas (Multilayer Perceptron) implementada em PyTorch |
 
-### `📂 Slide-Prof-Tiago/`
+### `📂 Slides-Prof-Tiago/`
 Contém os slides disponibilizados pelo professor com as explicações teóricas dos algoritmos, fundamentos matemáticos e exemplos aplicados a cada modelo de aprendizagem de máquina.
 
 ---
@@ -35,6 +42,7 @@ Contém os slides disponibilizados pelo professor com as explicações teóricas
 - [NumPy](https://numpy.org/) — operações numéricas e matriciais
 - [Pandas](https://pandas.pydata.org/) — manipulação e análise de dados
 - [Matplotlib](https://matplotlib.org/) / [Seaborn](https://seaborn.pydata.org/) — visualização de dados
+- [PyTorch](https://pytorch.org/) — implementação de redes neurais (MLP)
 - [Jupyter Notebook](https://jupyter.org/) — ambiente interativo de desenvolvimento
 
 ---
@@ -49,7 +57,12 @@ Contém os slides disponibilizados pelo professor com as explicações teóricas
 
 2. **Instale as dependências:**
    ```bash
-   pip install numpy pandas matplotlib jupyter
+   pip install numpy pandas matplotlib seaborn jupyter torch
+   ```
+
+3. **Abra o Jupyter Notebook:**
+   ```bash
+   jupyter notebook
    ```
 
 ---
@@ -60,13 +73,13 @@ Contém os slides disponibilizados pelo professor com as explicações teóricas
 
 **Instituição:** FATEC Jahu — Faculdade de Tecnologia de Jaú  
 **Professor:** Tiago  
-**Curso:** Tecnologia em [Desenvolvimento de Software Multiplataforma]
+**Curso:** Tecnologia em Desenvolvimento de Software Multiplataforma
 
 ---
 
 ## 📝 Licença
 
-Este repositório é de uso educacional. Os materiais dos slides são de autoria do [**Prof. Tiago**](https://www.linkedin.com/in/tiagotas/) e estão disponibilizados exclusivamente para fins acadêmicos.
+Este repositório é de uso educacional. Os materiais dos slides são de autoria do [**Prof. Tiago**](https://www.linkedin.com/in/tiagoatas/) e estão disponibilizados exclusivamente para fins acadêmicos.
 
 ---
 
